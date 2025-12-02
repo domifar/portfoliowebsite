@@ -8,6 +8,7 @@ import Logo from '@/components/ui/logo'
 import Layout from '@/layouts/Layout.astro'
 import { getRecentPosts } from '@/lib/data-utils'
 import { SITE } from '@/consts'
+import { Image } from 'astro:assets'
 
 const blog = await getRecentPosts(3)
 const currentUrl = Astro.url;
@@ -86,33 +87,24 @@ const currentUrl = Astro.url;
           title="latest blog posts"
           aria-label="latest blog posts"
         >
-          Latest Blog Posts
+          Certificates
         </h2>
         <p class="text-muted-foreground text-sm" aria-label="blog description">
-          Here are some of my latest blog posts. You can find more on my blog
-          page.
+          Here are some of my most intresting certificates:
         </p>
       </div>
-      <ul class="flex flex-col gap-y-4">
-        {
-          blog.map((post) => (
-            <li>
-              <BlogCard entry={post} />
-            </li>
-          ))
-        }
-      </ul>
-      <div class="flex justify-center" aria-label="see all posts">
-        <Link
-          href="/blog"
-          class={buttonVariants({ variant: 'ghost' }) + ' group'}
-        >
-          See all posts <span
-            class="ml-1.5 transition-transform group-hover:translate-x-1"
-            >&rarr;</span
-          >
-        </Link>
-      </div>
+      <Image
+        alt={"certificate SAP"},
+        src="/SAP_certificate.jpg",
+        height={100},
+        width={1000}
+      />
+      <Image
+        alt={"Cybersecurity certificate"}
+        src="/Introduction_to_Cybersecurity_Badge.jpg"
+        height={100}
+        width={1000}
+      />
     </section>
   </section>
 </Layout>

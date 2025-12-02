@@ -1,0 +1,176 @@
+---
+import Breadcrumbs from '@/components/Breadcrumbs.astro'
+import PageHead from '@/components/PageHead.astro'
+import Layout from '@/layouts/Layout.astro'
+import { Icon } from 'astro-icon/components'
+
+const currentUrl = Astro.url
+---
+
+<Layout canonicalUrl={currentUrl}>
+  <PageHead slot="head" title="Lebenslauf" />
+  
+  <Breadcrumbs
+    items={[
+      { label: 'Lebenslauf', href: '/cv', icon: 'lucide:file-text' },
+    ]}
+  />
+  
+  <section class="max-screen mt-12 px-4 md:px-6">
+    <div class="flex w-fit items-center gap-2 text-primary">
+      <Icon class="h-4 w-4 text-secondary-foreground" name="lucide:user" />
+      <p class="font-mono text-sm uppercase leading-none text-secondary-foreground">
+        Professional Profile
+      </p>
+    </div>
+    
+    <h1 class="font-custom text-foreground text-4xl font-bold mt-2">
+      CV
+    </h1>
+    
+    <p class="text-muted-foreground text-md max-w-2xl mt-3">
+      Here you will find an overview of my professional career and educational background.
+    </p>
+
+    <!-- Lebenslauf Container -->
+    <div class="mt-12 space-y-8">
+      <!-- Berufserfahrung -->
+      <div class="bg-card rounded-lg p-6 shadow-sm">
+        <h2 class="text-xl font-bold text-foreground mb-6 flex items-center gap-2">
+          <Icon name="lucide:briefcase" class="h-5 w-5" />
+          Professional experience
+        </h2>
+        
+        <div class="space-y-6">
+          <!-- Eintrag 1 -->
+          <div class="relative pl-8 border-l border-border">
+            <div class="absolute left-[-8px] top-0 w-4 h-4 rounded-full bg-primary"></div>
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+              <h3 class="text-lg font-bold text-foreground">Internship</h3>
+              <span class="text-sm text-primary bg-primary/10 px-3 py-1 rounded-full">August 2022</span>
+            </div>
+            <p class="text-muted-foreground mb-2">UNIQA Versicherungen GmbH</p>
+            <ul class="space-y-2 mt-3">
+              <li class="flex items-start gap-2">
+                <Icon name="lucide:check" class="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                <span class="text-sm">Digitalization of documents</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Icon name="lucide:check" class="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                <span class="text-sm">Sort out and restructure consultation folder</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Eintrag 2 -->
+          <div class="relative pl-8 border-l border-border">
+            <div class="absolute left-[-8px] top-0 w-4 h-4 rounded-full bg-primary"></div>
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+              <h3 class="text-lg font-bold text-foreground">Internship</h3>
+              <span class="text-sm text-primary bg-primary/10 px-3 py-1 rounded-full">August 2023</span>
+            </div>
+            <p class="text-muted-foreground mb-2">Österreichisches Bundesheer Luftraumüberwachung</p>
+            <ul class="space-y-2 mt-3">
+              <li class="flex items-start gap-2">
+                <Icon name="lucide:check" class="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                <span class="text-sm">Develop a programm for automated git requests</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Icon name="lucide:check" class="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                <span class="text-sm">Develop a programm for automatic IP Address calculations</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="relative pl-8 border-l border-border">
+            <div class="absolute left-[-8px] top-0 w-4 h-4 rounded-full bg-primary"></div>
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+              <h3 class="text-lg font-bold text-foreground">Internship</h3>
+              <span class="text-sm text-primary bg-primary/10 px-3 py-1 rounded-full">August 2024</span>
+            </div>
+            <p class="text-muted-foreground mb-2">PORSCHE Teilevertriebszentrum Salzburg</p>
+            <ul class="space-y-2 mt-3">
+              <li class="flex items-start gap-2">
+                <Icon name="lucide:check" class="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                <span class="text-sm">Sort car parts for every workshop</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Icon name="lucide:check" class="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                <span class="text-sm">Sending the packets to the worshops</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="relative pl-8 border-l border-border">
+            <div class="absolute left-[-8px] top-0 w-4 h-4 rounded-full bg-primary"></div>
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+              <h3 class="text-lg font-bold text-foreground">Internship</h3>
+              <span class="text-sm text-primary bg-primary/10 px-3 py-1 rounded-full">July-August 2025</span>
+            </div>
+            <p class="text-muted-foreground mb-2">DM</p>
+            <ul class="space-y-2 mt-3">
+              <li class="flex items-start gap-2">
+                <Icon name="lucide:check" class="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                <span class="text-sm">Call branches and fix internet problems</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Icon name="lucide:check" class="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                <span class="text-sm">Update mobile phone communications in several branches</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bildung -->
+      <div class="bg-card rounded-lg p-6 shadow-sm">
+        <h2 class="text-xl font-bold text-foreground mb-6 flex items-center gap-2">
+          <Icon name="lucide:graduation-cap" class="h-5 w-5" />
+          Bildung
+        </h2>
+        
+        <div class="space-y-6">
+          <!-- Eintrag 1 -->
+          <div class="relative pl-8 border-l border-border">
+            <div class="absolute left-[-8px] top-0 w-4 h-4 rounded-full bg-primary"></div>
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+              <h3 class="text-lg font-bold text-foreground">Volksschule Hallein Burgfried</h3>
+              <span class="text-sm text-primary bg-primary/10 px-3 py-1 rounded-full">09/2013 - 07/2017</span>
+            </div>
+          </div>
+
+          <!-- Eintrag 2 -->
+          <div class="relative pl-8 border-l border-border">
+            <div class="absolute left-[-8px] top-0 w-4 h-4 rounded-full bg-primary"></div>
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+              <h3 class="text-lg font-bold text-foreground">Bundesrealgymnasium Hallein</h3>
+              <span class="text-sm text-primary bg-primary/10 px-3 py-1 rounded-full">09/2017 - 07/2021</span>
+            </div>
+          </div>
+
+          <div class="relative pl-8 border-l border-border">
+            <div class="absolute left-[-8px] top-0 w-4 h-4 rounded-full bg-primary"></div>
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+              <h3 class="text-lg font-bold text-foreground">Higher technical collage Saalfelden</h3>
+              <span class="text-sm text-primary bg-primary/10 px-3 py-1 rounded-full">09/2021 - now</div>
+              <p class="text-sm mt-2">focus: web development und software engineering</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+  </section>
+</Layout>
+
+<style>
+  .relative.pl-8.border-l::before {
+    content: '';
+    position: absolute;
+    left: -1px;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background: linear-gradient(to bottom, var(--color-border), transparent);
+  }
+</style>

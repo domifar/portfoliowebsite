@@ -21,31 +21,19 @@ export const NAV_LINKS: SocialLink[] = [
     label: 'projects',
   },
   {
-    href: '/blog',
-    label: 'blog',
+    href: '/cv',
+    label: 'CV',
   },
 ]
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
-    href: 'https://github.com/cojocaru-david?ref=personal-website',
+    href: 'https://github.com/domifar',
     label: 'GitHub',
   },
   {
-    href: 'mailto:contact@cojocarudavid.me',
+    href: 'mailto:dominik.faritsch@sbg.at',
     label: 'Email',
-  },
-  {
-    href: 'tel:+40764132266',
-    label: 'Phone',
-  },
-  {
-    href: 'https://www.instagram.com/david._.cojo?ref=personal-website',
-    label: 'Instagram',
-  },
-  {
-    href: '/rss.xml',
-    label: 'RSS',
   },
 ]
 
@@ -79,7 +67,6 @@ export const technologies: Technologies = {
     { text: 'HTML', logo: 'mdi:language-html5' },
     { text: 'JavaScript', logo: 'mdi:language-javascript' },
     { text: 'CSS', logo: 'mdi:language-css3' },
-    { text: 'PHP', logo: 'mdi:language-php' },
     { text: 'Astro', logo: 'simple-icons:astro' },
     { text: 'Tailwind CSS', logo: 'mdi:tailwind' },
   ],
@@ -88,7 +75,6 @@ export const technologies: Technologies = {
     { text: 'Git', logo: 'mdi:git' },
   ],
   'Hosting and Cloud Services': [
-    { text: 'DigitalOcean', logo: 'mdi:digital-ocean' },
     { text: 'Cloudflare', logo: 'cib:cloudflare' },
     { text: 'Netlify', logo: 'cib:netlify' },
   ],
@@ -97,13 +83,10 @@ export const technologies: Technologies = {
     { text: 'Ubuntu', logo: 'mdi:ubuntu' },
   ],
   'Other Programming Languages and Technologies': [
-    { text: 'Lua', logo: 'mdi:language-lua' },
-    { text: 'Golang', logo: 'mdi:language-go' },
     { text: 'Node.js', logo: 'mdi:nodejs' },
   ],
   'Web Servers': [
     { text: 'Apache', logo: 'cib:apache' },
-    { text: 'Nginx', logo: 'cib:nginx' },
   ],
   Databases: [
     { text: 'MySQL', logo: 'cib:mysql' },
