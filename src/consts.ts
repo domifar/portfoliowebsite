@@ -1,14 +1,14 @@
 import type { IconMap, SocialLink, Site } from '@/types'
 
 export const SITE: Site = {
-  title: 'Cojocaru David',
+  title: 'Dominik Faritsch',
   description:
-    "Junior Full Stack Developer specializing in modern web technologies. Expert in React, Node.js, TypeScript, and cloud development. Read my latest tech tutorials, project insights, and programming tips on web development, DevOps, and software engineering best practices.",
+    "Hi, I'm Dominik Faritsch. I am 18 years old and i study informatics at the higher technical college in St. Johann im Pongau in Austria, Salzburg. Explore my work discover what I've learned.",
   href: 'https://www.cojocarudavid.me',
-  author: 'Cojocaru David',
+  author: 'Dominik Faritsch',
   locale: 'en-US',
-  location: 'Romania',
-  email: 'contact@cojocarudavid.me'
+  location: 'Austria',
+  email: 'dominik.faritsch@sbg.at'
 }
 
 export const NAV_LINKS: SocialLink[] = [
